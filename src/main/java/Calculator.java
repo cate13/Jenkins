@@ -40,10 +40,8 @@ class Calculator {
   etc
    */
   int fibonacciNumberFinder(int n){
-//    if (n <= 1)
-//      return n;
-//    return fibonacciNumberFinder(n-1) + fibonacciNumberFinder(n-2);
-    return 0;
+    if (n <= 1) return n;
+    return fibonacciNumberFinder(n-1) + fibonacciNumberFinder(n-2);
   }
 
 
@@ -55,8 +53,7 @@ class Calculator {
   if int a = 16 then this method returns: 10000
    */
   String intToBinaryNumber(int n){
-//    return Integer.toBinaryString(n);
-    return null;
+    return Integer.toBinaryString(n);
   }
 
   /*
@@ -68,12 +65,11 @@ class Calculator {
   if you run this function twice with the same String input, it must return 2 unique String IDs
    */
   String createUniqueID(String n){
-//    StringBuilder stringBuilder = new StringBuilder();
-//    stringBuilder.append(n);
-//    UUID uuid = UUID.randomUUID();
-//    stringBuilder.append(uuid.toString());
-//    return stringBuilder.toString();
-    return null;
+    StringBuilder stringBuilder = new StringBuilder();
+    stringBuilder.append(n);
+    UUID uuid = UUID.randomUUID();
+    stringBuilder.append(uuid.toString());
+    return stringBuilder.toString();
   }
 
 
