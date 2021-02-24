@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    registry = "YourDockerUser/my_java_application"
+    registry = "ccate13/calculator_app"
     registryCredential = 'dockerhub'
     dockerImage = ''
   }
